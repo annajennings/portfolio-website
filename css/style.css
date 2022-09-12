@@ -55,3 +55,28 @@ a:hover {
 a:active { /* selected link */
   color: #ff9a26;
 }
+.button:hover {
+  color: #001137
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button { /*must be towards bottom*/
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #597188;
+  color: #ffecd6; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 10px;
+  border-bottom: 3px solid #001137; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button.contact {
+  background-color: transparent;
+  color: #001137;
+  text-transform: uppercase;
+  border: 2px solid #001137;
+}
+.button.contact:hover {
+  background-color: #ff9a26;
+  color: #001137;
+}
