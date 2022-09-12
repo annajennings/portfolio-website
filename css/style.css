@@ -40,3 +40,18 @@ img {
   width: 100%;
 }
 
+a {
+  color: #597188;
+  text-decoration: underline;
+}
+
+a:visited { /* visited link */
+  color: #ff9a26;
+}
+a:hover {
+  color: #001137;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #ff9a26;
+}
