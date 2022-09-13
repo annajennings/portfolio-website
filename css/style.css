@@ -5,6 +5,9 @@ Tertiary (peach): #ffecd6
 Quaternary (neutral dark blue): #597188
 Quinary (bright blue): #0080ff
 */
+* {
+  border-sizings: border-box;
+}
 body {
   background-color: #ffecd6;
   font-family: 'Interstate', sans-serif;
@@ -39,7 +42,6 @@ h4 {
 img {
   width: 100%;
 }
-
 a {
   color: #597188;
   text-decoration: underline;
@@ -80,3 +82,63 @@ a:active { /* selected link */
   background-color: #ff9a26;
   color: #001137;
 }
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0;  /* 25px top and bottom, 0 left and right */
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+  margin: 0 0 0 0;
+  padding: 0;
+}
+#hero {
+  background-color: #ff9a26;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 133px;
+}
+.logo {
+  max-width: 250px;
+}
+header {
+  background-color: #597188;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 7px 7px 5px 0px rgba(0, 17, 55, 0.75);
+  width: 100%;
+  position: fixed;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a { /*The above code only selects links that are list elements within an unordered list within the nav element. */
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff9a26;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffecd6;
+}
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffecd6;
+}
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
