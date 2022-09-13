@@ -91,34 +91,34 @@ a:active { /* selected link */
 .row {
   margin: 25px 0;  /* 25px top and bottom, 0 left and right */
 }
-#hero h4 {
-  text-align: center; /* Centers text */
-  margin: 0 0 0 0;
-  padding: 0;
-}
+
 #hero {
   background-color: #ff9a26;
-  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 5px;
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+#footer {
+  text-align: center;
 }
 header {
   background-color: #001137;
   text-align: center;
   padding: 10px 0;
-  margin:10px
   box-shadow: 7px 7px 5px 0px rgba(89, 113, 136, 0.75);
   width: 100%;
   position: fixed;
 }
 main {
-  padding-top: 150px;
+  padding-top: 140px;
 }
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 25px; border-bottom: 1px solid #001137;
 }
 .logo {
-  max-width: 600px;
+  max-width: 700px;
   padding-top: 20px;
 }
 
