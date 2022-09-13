@@ -36,8 +36,9 @@ h3 {
   font-weight: 400;
 }
 h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+  font-family: 'interstate-condensed', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 img {
   width: 100%;
@@ -83,37 +84,44 @@ a:active { /* selected link */
   color: #001137;
 }
 /* Layout styling */
+
 .container {
   padding: 0 15px;
 }
 .row {
   margin: 25px 0;  /* 25px top and bottom, 0 left and right */
 }
-#hero h1 {
+#hero h4 {
   text-align: center; /* Centers text */
   margin: 0 0 0 0;
   padding: 0;
 }
 #hero {
   background-color: #ff9a26;
-  padding: 20px 0;
+  padding: 10px;
   display: inline-block;
   width: 100%;
 }
-main {
-  padding-top: 133px;
-}
-.logo {
-  max-width: 250px;
-}
 header {
-  background-color: #597188;
+  background-color: #001137;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 7px 7px 5px 0px rgba(0, 17, 55, 0.75);
+  margin:10px
+  box-shadow: 7px 7px 5px 0px rgba(89, 113, 136, 0.75);
   width: 100%;
   position: fixed;
 }
+main {
+  padding-top: 150px;
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+.logo {
+  max-width: 600px;
+  padding-top: 20px;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
