@@ -16,7 +16,6 @@ body {
   line-height: 1.6;
   color: #001137;
 }
-
 h1, h2, h3, h4 {
   font-family: 'acier-bat-solid', sans-serif;
   line-height: 1.4;
@@ -24,13 +23,13 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
-
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
 }
-
 h3 {
   font-size: 1.75em;
   font-weight: 400;
@@ -63,7 +62,17 @@ a:hover {
 a:active { /* selected link */
   color: #ff9a26;
 }
-
+#download-button {
+  text-align: center;
+}
+#about-picture {
+  width:100%;
+  max-width: 100%;
+  height: auto;
+}
+.center {
+  text-align: center;
+}
 .button { /*must be towards bottom*/
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #597188;
@@ -76,6 +85,7 @@ a:active { /* selected link */
   border-bottom: 3px solid #001137; /* width of the border, type, color */
   transition-duration: 0.2s;
   transition-property: opacity;
+  margin: auto;
 }
 .button:hover {
   color: #001137;
@@ -104,11 +114,6 @@ a:active { /* selected link */
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   font-weight: 500;
-}
-#about-picture {
-  width:100%;
-  max-width: 100%;
-  height: auto;
 }
 /* Layout styling */
 
@@ -144,6 +149,7 @@ main {
 #work .row {
   padding-bottom: 25px;
 }
+#icon {margin: 10px}
 .logo {
   max-width: 250px;
   padding-top: 20px;
@@ -179,6 +185,15 @@ nav > ul > li > a:active {
   text-transform: uppercase;
   font-weight: 900;
   color: #ffecd6;
+}
+[class*="col-"] {
+  float: left;
+  padding: 0px; /* CAN'T FIGURE OUT PADDING???? it takes it out of columns*/
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*ANIMATION*/
@@ -242,19 +257,12 @@ body {
 .col-md-6 {
   width: 50%;
 }
-[class*="col-"] {
-  float: left;
-  padding-left: 0px;
-  padding-right: 0px; /* CAN'T FIGURE OUT PADDING???? it takes it out of columns*/
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 #about-page h3 { margin: 0;}
 #work h3 { margin: 0;}
+
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -268,6 +276,14 @@ Large devices (1024px or larger)
   max-width: 400px;
   padding-top: 20px;
 }
+.col-lg-7 {
+  width: 60%;
+}
+.col-lg-5 {
+  width: 40%;
+}
+
+
 }
 
 /* ==============================
