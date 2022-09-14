@@ -34,10 +34,16 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  line-height: 1;
 }
 h4 {
   font-family: 'interstate-condensed', sans-serif;
   font-size: 1.5em;
+  font-weight: 600;
+}
+h5 {
+  font-family: 'interstate-condensed', sans-serif;
+  font-size: 1.2em;
   font-weight: 500;
 }
 img {
@@ -45,9 +51,8 @@ img {
 }
 a {
   color: #597188;
-  text-decoration: underline;
+  text-decoration: none;
 }
-
 a:visited { /* visited link */
   color: #ff9a26;
 }
@@ -58,30 +63,52 @@ a:hover {
 a:active { /* selected link */
   color: #ff9a26;
 }
-.button:hover {
-  color: #001137
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
+
 .button { /*must be towards bottom*/
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #597188;
   color: #ffecd6; /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
   padding: 15px;
   border-radius: 10px;
   border-bottom: 3px solid #001137; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button:hover {
+  color: #001137;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  font-weight: 500;
 }
 .button.contact {
   background-color: transparent;
   color: #001137;
   text-transform: uppercase;
   border: 2px solid #001137;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .button.contact:hover {
   background-color: #ff9a26;
   color: #001137;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  font-weight: 500;
+}
+.button.contact:active {
+  background-color: #001137;
+  color: #ff9a26;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  font-weight: 500;
+}
+#about-picture {
+  width:100%;
+  max-width: 100%;
+  height: auto;
 }
 /* Layout styling */
 
@@ -112,13 +139,13 @@ header {
   position: fixed;
 }
 main {
-  padding-top: 140px;
+  padding-top: 120px;
 }
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #001137;
+  padding-bottom: 25px;
 }
 .logo {
-  max-width: 700px;
+  max-width: 250px;
   padding-top: 20px;
 }
 
