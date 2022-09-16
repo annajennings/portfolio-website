@@ -6,7 +6,7 @@ Quaternary (neutral dark blue): #597188
 Quinary (bright blue): #0080ff
 */
 * {
-  border-sizings: border-box;
+  box-sizing: border-box;
 }
 body {
   background-color: #ffecd6;
@@ -24,6 +24,7 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
   text-align: center;
+  padding-top: 10px;
 }
 h2 {
   font-size: 2.25em;
@@ -154,7 +155,10 @@ main {
   max-width: 250px;
   padding-top: 20px;
 }
-
+#headshot {
+  float: left;
+  padding: 10px;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -188,7 +192,7 @@ nav > ul > li > a:active {
 }
 [class*="col-"] {
   float: left;
-  padding: 0px; /* CAN'T FIGURE OUT PADDING???? it takes it out of columns*/
+  padding: 10px; /* CAN'T FIGURE OUT PADDING???? it takes it out of columns*/
 }
 .row::after {
   content: "";
