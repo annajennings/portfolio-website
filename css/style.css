@@ -138,22 +138,21 @@ a:active { /* selected link */
 }
 header {
   background-color: #001137;
-  text-align: center;
   padding: 10px 0;
   box-shadow: 7px 7px 5px 0px rgba(89, 113, 136, 0.75);
   width: 100%;
   position: fixed;
 }
 main {
-  padding-top: 120px;
+  padding-top: 50px;
 }
 #work .row {
   padding-bottom: 25px;
 }
 #icon {margin: 10px}
 .logo {
-  max-width: 250px;
-  padding-top: 20px;
+  max-width: 200px;
+  padding-top: 10px;
 }
 #headshot {
   float: left;
@@ -162,9 +161,32 @@ main {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position:absolute;
+  right: 10px;
+  top: 2px;
+  font-size:20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+ padding:10px 0;
+ text-align: right;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 nav > ul > li > a { /*The above code only selects links that are list elements within an unordered list within the nav element. */
   padding: 0 15px;
@@ -235,7 +257,7 @@ nav > ul > li > a:active {
 /* ==============================
 Medium devices (640px or larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -251,6 +273,18 @@ Medium devices (640px or larger)
   }
   main {
     padding-top: 80px;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul {
+  margin: 1em 0;
 }
 body {
   font-size: 18px;
