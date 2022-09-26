@@ -384,6 +384,13 @@ Medium devices (640px or larger)
     width: 50%;
   }
 
+  .col-md-4 {
+    width: 33%;
+  }
+  .col-md-8 {
+    width: 66%;
+  }
+
   #about-page h3 {
     margin: 0;
   }
@@ -415,4 +422,10 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 40%;
   }
+  .col-lg-4 {
+    width: 33%;
+  }
+  .col-lg-8 {
+      width: 66%;
+    }
 }
