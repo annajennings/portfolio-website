@@ -1,4 +1,4 @@
-/*
+ /*
 Primary (orange):#ff9a26
 Secondary (dark blue): #001137
 Tertiary (peach): #ffecd6
@@ -23,7 +23,7 @@ h2,
 h3,
 h4 {
   font-family: 'acier-bat-solid', sans-serif;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 h1 {
@@ -41,7 +41,6 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  line-height: 1;
 }
 
 h4 {
@@ -61,15 +60,16 @@ img {
 }
 
 a {
-  color: #ff9a26;
+  color: #001137;
   text-decoration: none;
+  font-family: 'interstate-condensed', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
-a:visited {
-  /* visited link */
-  color: #ff9a26;
-  text-decoration: none;
-}
+
 
 a:hover {
   color: #001137;
@@ -81,6 +81,7 @@ a:active {
   color: #597188;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 
 #download-button {
   text-align: center;
@@ -152,8 +153,14 @@ a:active {
   padding: 0 15px;
 }
 
+.container-top {
+  text-align:center;
+  padding: 0 15px;
+  padding-top: 50px;
+}
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 10px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #hero {
@@ -176,7 +183,9 @@ header {
   width: 100%;
   position: fixed;
 }
-
+li < a {
+  line-height: 1.5em;
+}
 main {
   padding-top: 50px;
 }
@@ -207,8 +216,18 @@ nav > ul {
 
 iframe { border: none; }
 
+
 .navtoggle li:not(:last-child) {
   display: none;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -341,6 +360,15 @@ img.demo {
 }
 /* -------------- end LIGHTBOX code -------------------------* /
 
+/*Menu toggle*/
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
@@ -372,7 +400,10 @@ nav > ul > li > a { /* This code only selects links that are list elements withi
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ff9a26;
+  color: #ffecd6;
+  text-decoration: none;
+  font-family: 'Interstate', sans-serif;
+  font-size: 18px;
 }
 
 nav > ul > li > a:visited {
@@ -386,6 +417,7 @@ nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
   color: #ffecd6;
 }
 
@@ -519,6 +551,14 @@ Medium devices (640px or larger)
   }
   .col-md-8 {
     width: 66%;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  .column2 {
+    float: left;
+    width: 50%;
   }
 
   #about-page h3 {
