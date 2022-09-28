@@ -49,193 +49,303 @@
   </header>
 
   <main>
-    <div class="container">
-      <div>
+    <div class="container-top">
+      <div class="container">
+
         <div class="container">
           <h1>TotalHealth</h1>
-          <p>For my project as part of the CareerFoundry UX Design Immersion course, I chose to design a health app that allows users to centralize all of their health data and medical records in one application available on desktop and mobile.</p>
+          <h5>A responsive web app designed for CareerFoundry UX Design Immersion course. </h5>
+            <div class="row">
+          <h4>MY ROLE</h4>
+          <h5>UX/UI Designer</h5>
+
+            <div class="column">
+              <h3>THE CHALLENGE</h3>
+              <p>Actively managing one's health often requires using several apps for different aspects of health. Users need a way to centralize all data and records in one place to streamline their healthcare.</p>
+            </div>
+            <div class="column">
+              <h3>THE GOAL</h3>
+              <p>Simplify health management with a streamlined platform for users to sync their favorite health apps, track upcoming appointments, and organize medical records.
+              </p>
+            </div>
+            <div class="column">
+              <h3>THE TOOLS</h3>
+              <ul>
+                <li>Adobe XD</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>UsabilityTesting.com</li>
+                <li>OptimalSort.com</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
         </div>
+
+
+        <!--LIGHT BOX COPIED CODE!!!-->
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+          <div class="column">
+            <img src="img/th/img-th-cover@2x.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/th/img-mockup-mobile@2x.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/th/img-mockup2@2x.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/th/img-th-cover@2x.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/th/img-mockup-mobile@2x.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/th/img-mockup2@2x.jpg" style="width:100%">
+              </div>
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="img/th/img-th-cover@1x.jpg" onclick="currentSlide(1)" alt="Mockup showing mobile and desktop screens">
+              </div>
+              <div class="column">
+                <img class="demo" src="img/th/img-mockup-mobile@1x.jpg" onclick="currentSlide(2)" alt="Mockup showing several mobile screens">
+              </div>
+              <div class="column">
+                <img class="demo" src="img/th/img-mockup2@1x.jpg" onclick="currentSlide(2)" alt="Mockup showing app in action">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="container">
-        <picture>
-          <source srcset="img/th/img-mockup-mobile@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-mockup-mobile@2x.jpg" alt="Total Health splashscreen">
-        </picture>
-      </div>
-      <div class="container">
-        <h2>THE CHALLENGE</h2>
-        <p>Many health popular and effective health apps already exist, but it is difficult to tailor one app to suit everyone’s needs. My challenge was to design a responsive web app that syncs other apps, collects data and metrics, and stores
-          medical
-          records for a user on one platform.</p>
-        <h3> PROBLEM STATEMENT</h3>
-        <p>Actively managing one's health often requires using several apps for different aspects of health. Users need a way to centralize all data and records in one place to improve and streamline their healthcare.</p>
-        <h3> HYPOTHESIS STATEMENT</h3>
-        <p>I believe an app that allows users to sync their favorite health apps they already use, track upcoming appointments, and organize all of their medical records in one application would streamline and improve the user's health management.
-        </p>
-        <h2>THE PROCESS</h2>
-        <p>As the sole UX designer, I applied the Design Thinking method in the following steps, which I will detail below in this case study:</p>
-        <h3>INSPIRATION</h3>
-        <p>Understand and observe existing health apps with Competitive Analysis & User Interviews</p>
-        <h3>CONCEPTUALIZATION</h3>
-        <p>Create a User Personas to better understand problem to be solved then create User Flows from this POV.</p>
-        <h3>ITERATION</h3>
-        <p>Transform user flows into wireframes then high-fidelity clickable prototype to conduct user testing and further refine design</p>
-        <h3>EXPOSITION</h3>
-        <p>Tell story of the design process, methodology, and evidence to support design decision in presentation</p>
-      </div>
-      <div class="container">
-        <picture>
-          <source srcset="img/th/img-design-thinking@1x.png" media="(max-width:767px)">
-          <img src="img/th/img-design-thinking@2x.png" alt="Design thinking chart">
-        </picture>
-      </div>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="column col-md-6 col-lg-6">
-          <h3>THE DELIVERABLES</h3>
-          <ul>
-            <li><a href="files/th/th-business-requirements.pdf" target="_blank">Business requirements document</a></li>
-            <li><a href="files/th/th-competitive-analysis.pdf" target="_blank">Competitive analysis</a></li>
-            <li><a href="files/th/th-user-personas.pdf" target="_blank">User personas</a></li>
-            <li><a href="files/th/th-user-journeys.pdf" target="_blank">User journeys</a></li>
-            <li><a href="files/th/th-user-flows.pdf" target="_blank">User flows</a></li>
-            <li><a href="files/th/th-sitemap.pdf" target="_blank">Sitemap</a></li>
-            <li>Low-, mid-, & high-fidelity wireframes#link to below#</li>
-            <li>Clickable desktop prototype#link to embedded below#</li>
-            <li>Clickable mobile prototype#link to embedded below#</li>
-            <li><a href="files/th/th-user-test-plan-script.pdf" target="_blank">User test plan & script</a></li>
-            <li><a href="files/th/th-research-analysis.pdf" target="_blank">User research analysis</a></li>
-          </ul>
+
+          <div class="col-md-6 col-lg-7">
+            <h3>THE PROCESS</h3>
+            <div>
+              <picture>
+                <source srcset="img/th/img-design-thinking@1x.png" media="(max-width:767px)">
+                <img src="img/th/img-design-thinking@2x.png" alt="Design thinking chart">
+              </picture>
+            </div>
+            <p>INSPIRATION: Understand and observe existing health apps with Competitive Analysis & User Interviews</p>
+            <p>CONCEPTUALIZATION: Create a User Personas to better understand problem to be solved then create User Flows from this POV.</p>
+            <p>ITERATION: Transform user flows into wireframes then high-fidelity clickable prototype to conduct user testing and further refine design</p>
+            <p>EXPOSITION: Tell story of the design process, methodology, and evidence to support design decision in presentation</p>
+
+          </div>
+          <div class="col-md-6 col-lg-5">
+
+            <h3>THE DELIVERABLES</h3>
+            <ul>
+              <li><a href="files/th/th-business-requirements.pdf" target="_blank">Business requirements document</a></li>
+              <li><a href="files/th/th-competitive-analysis.pdf" target="_blank">Competitive analysis</a></li>
+              <li><a href="files/th/th-user-personas.pdf" target="_blank">User personas</a></li>
+              <li><a href="files/th/th-user-journeys.pdf" target="_blank">User journeys</a></li>
+              <li><a href="files/th/th-user-flows.pdf" target="_blank">User flows</a></li>
+              <li><a href="files/th/th-sitemap.pdf" target="_blank">Sitemap</a></li>
+              <li><a href="#wireframes" target="_blank">Low-, mid-, & high-fidelity wireframes</li>
+              <li><a href="files/th/th-user-test-plan-script.pdf" target="_blank">User test plan & script</a></li>
+              <li><a href="files/th/th-research-analysis.pdf" target="_blank">User research analysis</a></li>
+            </ul>
         </div>
-        <div class="column col-md-6 col-lg-6">
-          <h3>THE TOOLS</h3>
-          <ul>
-            <li>Adobe XD</li>
-            <li>Figma</li>
-            <li>Photoshop</li>
-            <li>UsabilityTesting.com</li>
-            <li>OptimalSort.com</li>
-          </ul>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+    <div class="row">
+      <h3>FINAL CLICKABLE PROTOYPES</h3>
+      <p>Try me!</p>
+    <div id="prototype" class=" col-md-4 col-lg-4">
+
+      <iframe width="282" height="500" src="https://xd.adobe.com/embed/80c92254-d748-4d83-9c96-bb69a410b215-d59a/?fullscreen"></iframe>
+
+    </div>
+    <div class="col-md-8 col-lg-8">
+
+      <iframe width="800" height="499" src="https://xd.adobe.com/embed/409c784b-083b-4eac-be52-1f454cc5f67a-15cf/?fullscreen"></iframe>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+    <div class="container">
+      <h1><U>DETAILED CASE STUDY</U></h1>
+        <div class="row">
+          <h2>INSPIRATION</h2>
+
+        <div class="col-md-6 col-lg-6">
+          <h4>COMPETITIVE ANLAYSIS</h4>
+          <p>The results of my <a href="files/th/th-competitive-analysis.pdf" target="_blank">competitive analysis</a> identified many highly-rated, direct competitors including: Fabulous, Recovery Record, Weight Watchers, Noom, Apple Health,
+            Solstice Health, among many others. </p>
+          <p>However, while each app had
+            its merits, I couldn't find a product available that gives options for customization while maintaining simplicity.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+
+          <h4>USER INTERVIEWS</h4>
+          <p>Through user interviews and a user survey, I collected qualitative (interviews) and quantitative data (surveys) to understand which apps and features are most popular,
+            gauge interest in an all-in-one health application, and pinpoint the common pain points.</p>
+          <p>View my detailed <a href="files/th/th-user-test-plan-script.pdf" target="_blank">USER TEST PLAN & SCRIPT</a> and <a href="file/th/th-user-research-analysis">RESEARCH ANALYSIS</a></p>
+          </p>
+        </div>
+      </div>
+      <p>Next, I reviewed, dissected, and transferred relevants bits of information to individual post-it notes into an affinity map to visualize the results, which led to many valuable insights, including:</p>
+      <ul>
+        <li>Opinions on Existing Apps: Users base their opinions of apps on interface, accuracy, and details of metrics</li>
+        <li>Apps & Devices: Most users of health apps use more than one. Apple Health and My Fitness Pal are among the most popular</li>
+        <li>Feelings: There is a general ambivalence, leaning towards the positive side, about experiences with health apps</li>
+      </ul>
+
+      <!--make the affinity maps a lightbox-->
+
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <picture>
+            <source srcset="img/th/img-affinity1@1x.jpg" data-lightbox="affinity1" media="(max-width:767px)">
+            <img src="img/th/img-affinity1@2x.jpg" alt="Affinity map #1">
+          </picture>
+          <p>Affinity Map #1, organized by topic</p>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <picture>
+            <source srcset="img/th/img-affinity2@1x.jpg" data-lightbox="affinity1" media="(max-width:767px)">
+            <img src="img/th/img-affinity2@2x.jpg" alt="Affinity map #2">
+          </picture>
+          <p>Affinity map #2, organized by types of feelings/statements</p>
         </div>
       </div>
 
-      <div class="container">
-        <h2>INSPIRATION</h2>
-        <h3>COMPETITIVE ANLAYSIS & USER INTERVIEWS</h3>
-        <p>My first step of the design process was conducting a Competitive Analysis to understand what resources already exist in popular health apps.</p>
-        <p>View my <a href="files/th/th-competitive-analysis.pdf" target="_blank">COMPETITIVE ANALYSIS</a></p>
-        <p>The results were very valuable and showed that there are many highly-rated, direct competitors, including: Fabulous, Recovery Record, Weight Watchers, Noom, Apple Health, Solstice Health, among many others. However, while each app had its
-          merits, I couldn't find a product available that gives options for customization while maintaining simplicity.</p>
-        <p>After the competitive analysis, I conducted User Interviews and Surveys. My goals for the user interviews were to collect qualitative (interviews) and quantitative data (surveys) to understand which apps and features are most popular,
-          gauge
-          interest in an all-in-one health application, and pinpoint the common pain points.</p>
-        <p>View my detailed <a href="files/th/th-user-test-plan-script.pdf" target="_blank">USER TEST PLAN & SCRIPT</a></p>
-        <p>After collecting all results, I reviewed and dissected the recordings of these interviews to pull relevant bits of information. I then transferred those to individual post-it notes and created an affinity map to visual the results:</p>
-        <div class="row">
-          <div class="column col-md-6 col-lg-6">
-            <picture>
-              <source srcset="img/th/img-affinity1@1x.png" data-lightbox="affinity1" media="(max-width:767px)">
-              <img src="img/th/img-affinity1@2x.png" alt="Affinity map #1">
-            </picture>
-            <p>Affinity Map #1, organized by topic</p>
-          </div>
-          <div class="column col-md-6 col-lg-6">
-            <picture>
-              <source srcset="img/th/img-affinity2@1x.png" data-lightbox="affinity1" media="(max-width:767px)">
-              <img src="img/th/img-affinity2@2x.png" alt="Affinity map #2">
-            </picture>
-            <p>Affinity map #2, organized by types of feelings/statements</p>
-          </div>
-        </div>
-        <p>These affinity maps led me to many valuable insights, including:</p>
-        <ul>
-          <li>Opinions on Existing Apps: Users base their opinions of apps on interface, accuracy, and details of metrics</li>
-          <li>Apps & Devices: Most users of health apps use more than one. Apple Health and My Fitness Pal are among the most popular</li>
-          <li>Feelings: There is a general ambivalence, leaning towards the positive side, about experiences with health apps</li>
-        </ul>
-        <p>View my <a href="file/th/th-user-research-analysis">User research analysis</a></p>
-      </div>
-      <div class="container">
-        <h2>CONCEPTUALIZATION</h2>
-        <h3>USER PERSONAS & USER FLOWS</h3>
-        <p>The inspiration phase helped me identify my target user as someone who is between the ages of 18 and 65 with an active interest in managing their health. This and the other discoveries I made in the inspiration phase led to creating two
-          user
-          personas:</p>
-        <div class="row">
-          <div class="column col-md-6 col-lg-6">
-            <picture>
-              <source srcset="img/th/img-persona1@1x.jpg" media="(max-width:767px)">
-              <img src="img/th/img-persona1@2x.jpg" alt="User persona #1">
-            </picture>
-          </div>
-          <div class="column col-md-6 col-lg-6">
 
-            <picture>
-              <source srcset="img/th/img-persona2@1x.jpg" media="(max-width:767px)">
-              <img src="img/th/img-persona2@2x.jpg" alt="User persona #2">
-            </picture>
-          </div>
-        </div>
-        <p>With such a wide audience and large scope, I was having difficulty defining the Problem and Hypothesis Statements. The user personas helped, but I was still struggling with understanding which features would be most useful to the user
-          while
-          not including so many that the app becomes cluttered and confusing.</p>
-        <p>This proved to be a continuing challenge, but I knew I could always go back to revise my goals, so I pushed forward with these working statements:</p>
-        <h4> PROBLEM STATEMENT</h4>
-        <p>Actively managing one's health often requires using several apps for different aspects of health. Users need a way to centralize all data and records in one place to improve and streamline their healthcare.</p>
-        <h4> HYPOTHESIS STATEMENT</h4>
-        <p>I believe an app that allows users to sync their favorite health apps they already use, track upcoming appointments, and organize all of their medical records in one application would streamline and improve the user's health management.
-        </p>
-        <p>After establishing a working understanding of the problem to be solved and the users who would benefit from a solution, I identified a handful of tasks to help me focus on the most important features and created user journeys to imagine
-          the
-          emotional journey a user might experience.
-        </p>
-        <div class="row">
-          <div class="column col-md-6 col-lg-6">
-            <picture>
-              <source srcset="img/th/img-user-journey-samuel@1x.jpg" media="(max-width:767px)">
-              <img src="img/th/img-user-journey-samuel@2x.jpg" alt="User journey">
-            </picture>
-          </div>
-          <div class="column col-md-6 col-lg-6">
+    </div>
+    <div class="container">
+      <h2>CONCEPTUALIZATION</h2>
+      <section id="user-personas">
+        <h4>USER PERSONAS</h3>
+          <p>The inspiration phase helped me identify my target user as someone who is between the ages of 18 and 65 with an active interest in managing their health.</p>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <picture>
+                <source srcset="img/th/img-persona1@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-persona1@2x.jpg" alt="User persona #1">
+              </picture>
+            </div>
+            <div class=" col-md-6 col-lg-6">
 
-            <picture>
-              <source srcset="img/th/img-user-journey-sarah@1x.jpg" media="(max-width:767px)">
-              <img src="img/th/img-user-journey-sarah@2x.jpg" alt="User journey">
-            </picture>
+              <picture>
+                <source srcset="img/th/img-persona2@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-persona2@2x.jpg" alt="User persona #2">
+              </picture>
+            </div>
           </div>
-        </div>
-        <p>This gave me insight to a few features that would improve the user experience, including a tool that allows users to view their progress and upload records by taking a photo on their phone.</p>
-        <p>These discoveries were valuable in the conceptualization phase, leading to more detailed user flows:
-        </p>
-        <picture>
-          <source srcset="img/th/img-userflow@1x.png" media="(max-width:767px)">
-          <img src="img/th/img-userflow@2x.png" alt="User flow">
-        </picture>
-      </div>
-      <div class="container">
-        <h2>ITERATION</h2>
-        <h3>WIREFRAMES & PROTOTYPES</h3>
-        <p>With a the conceptual phase done, I began iterating possible solutions, starting with a site-map:
+          <div class="row">
+            <p>With such a wide audience and large scope, I was having difficulty defining the Problem and Hypothesis Statements. The user personas helped, but I was still struggling with understanding which features would be most useful to the user
+              while
+              not including so many that the app becomes cluttered and confusing. This proved to be a continuing challenge, but I knew I could always go back to revise my goals, so I pushed forward with these working statements:</p>
+            <div class="col-md-6 col-lg-6 container-top">
+              <h4> PROBLEM STATEMENT</h4>
+              <p>Actively managing one's health often requires using several apps for different aspects of health. Users need a way to centralize all data and records in one place to improve and streamline their healthcare.</p>
+            </div>
+            <div class="col-md-6 col-lg-6 container-top">
+              <h4> HYPOTHESIS STATEMENT</h4>
+              <p>I believe an app that allows users to sync their favorite health apps they already use, track upcoming appointments, and organize all of their medical records in one application would streamline and improve the user's health
+                management.</p>
+            </div>
+          </div>
+          <div class="row">
+            <p>After establishing a working understanding of the problem to be solved and the users who would benefit from a solution, I identified a handful of tasks to help me focus on the most important features and created user journeys to
+              imagine
+              the
+              emotional journey a user might experience.
+            </p>
+
+            <div class="col-md-6 col-lg-6">
+              <picture>
+                <source srcset="img/th/img-user-journey-samuel@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-user-journey-samuel@2x.jpg" alt="User journey">
+              </picture>
+            </div>
+            <div class=" col-md-6 col-lg-6">
+
+              <picture>
+                <source srcset="img/th/img-user-journey-sarah@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-user-journey-sarah@2x.jpg" alt="User journey">
+              </picture>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+      <h4>USER FLOWS</h4>
+      <p>This gave me insight to a few features that would improve the user experience, including a tool that allows users to view their progress and upload records by taking a photo on their phone.</p>
+      <p>These discoveries were valuable in the conceptualization phase, leading to more detailed user flows:
+      </p>
+      <picture>
+        <source srcset="img/th/img-userflow@1x.png" media="(max-width:767px)">
+        <img src="img/th/img-userflow@2x.png" alt="User flow">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h2>ITERATION</h2>
+      <section id="wireframes">
+
+        <h3>SITEMAP</h3>
+        <p>With a my concept more solidified, I began iterating possible solutions by building a site-map. To reduce the cognitive load for users, I structured the website hierarchy into four main categories: Account, My Data, My Calendar, and My
+          Records. This way the user only needs to choose from a few options on each screen.
         </p>
         <picture>
           <source srcset="img/th/img-sitemap@1x.png" media="(max-width:767px)">
           <img src="img/th/img-sitemap@2x.png" alt="User flow">
         </picture>
-        <p>To reduce the cognitive load for users, I structured the website hierarchy into four main categories--Account, My Data, My Calendar, and My Records-- so the user only needs to choose from a few options on each screen.</p>
+        <h3>WIREFRAMES & PROTOTYPES</h3>
+
         <p>The results of a <a href="files/th/th-card-sort.pdf" target="_blank">CARD SORT</a> I conducted with Optimal Workshop mostly confirmed my instincts organizing the app features into the highest-level categories, which was a relief as I
-          created my
-          low-fidelity wireframes.
+          created my low-fidelity wireframes and prototypes.</p>
+
         </p>
-        <p>I began with wireframing three user flows each for desktop and mobile, then laying them out to produce low-fidelity prototypes:
-        </p>
+        <h5> <b>CHALLENGE!!</b> In sketching out my wireframes, I faced the same challenge again in deciding which features to focus on while maintaining simplicity to avoid overwhelming users. So, I focused on the most important tasks: adding new
+          appointments, syncing with other apps/devices, uploading and sharing records, and viewing the progress chart. I had to put a few of my ideas, such as building a learning feature, on the back-burner for later
+          iterations. </h5>
         <div class="row">
-          <div class="column col-md-6 col-lg-6">
+          <div class="col-md-6 col-lg-6">
 
             <picture>
               <source srcset="img/th/img-lowfi-wireframes-desktop@1x.jpg" media="(max-width:767px)">
               <img src="img/th/img-lowfi-wireframes-desktop@2x.jpg" alt="Low-fidelity wireframes">
             </picture>
           </div>
-          <div class="column col-md-6 col-lg-6">
+          <div class=" col-md-6 col-lg-6">
 
             <picture>
               <source srcset="img/th/img-lowfi-wireframes-mobile@1x.jpg" media="(max-width:767px)">
@@ -243,139 +353,121 @@
             </picture>
           </div>
         </div>
-        <p>In sketching out my wireframes, I faced that same challenge deciding which features to focus on while maintaining simplicity to avoid overwhelming users. However, things were slowly becoming clearer and I decided to focus on the most
-          important tasks: adding new appointments, syncing with other apps/devices, uploading and sharing records, and viewing the progress chart. I had to put a few of my ideas, such as building a learning feature, on the back-burner for later
-          iterations.</p>
-        <p>I continued onto mid-fidelity and high-fidelity wireframes, making adjustments at each level to clarify the user experience. Then, finally, I had my high-fidelity prototype ready for user testing!</p>
-        <iframe width="1000" height="500" src="https://xd.adobe.com/embed/998f810d-67b9-4893-b988-6501619ad289-ccdc/" allowfullscreen></iframe>
-        <h3>USER TESTING</h3>
-        <p>I chose moderated remote and in-person testing methods to balance the ease of scheduling with remote participants and the advantage of being physically present to observe participants in-person.</p>
-        <p>​​​​​​​At the beginning of each session, I explained the project, purpose, and intended use of information and confirmed that participants had all their questions answered.
-        </p>
-        <p> View my results: <a href="files/th/th-usability-test-report.pdf" target="_blank">Usability test report</a></p>
-        <p>The usability tests provided valuable results for my design process. The participants helped me make design decisions, but most importantly, I discovered I overlooked some major components to the navigation and user experience.</p>
-        <p>One of the more severe problems was the lack of confirmation after most of the tasks on both mobile and desktop. Users were unsure after completing tasks if they were successful, making them less comfortable using the app. </p>
-        <p>I did have one confirmation box in the desktop prototype after adding a new appointment, but discovered the dialog box slowed the user in moving between tasks. To reduce to impact of the confirmation while making sure the user is
-          reassured, I transformed the confirmation into a snackbar instead.
-        </p>
-        <div class="row">
-          <div class="column col-md-6 col-lg-6">
-            <picture>
-              <source srcset="img/th/img-midfi-confirmation@1x.jpg" media="(max-width:767px)">
-              <img src="img/th/img-midfi-confirmation@2x.jpg" alt="Confirmation screen before user-texting">
-            </picture>
-            <p>Confirmation before user testing</p>
-          </div>
-          <div class="column col-md-6 col-lg-6">
 
-            <picture>
-              <source srcset="img/th/img-midfi-confirmation2@1x.jpg" media="(max-width:767px)">
-              <img src="img/th/img-midfi-confirmation2@2x.jpg" alt="Confirmation screen after user testing">
-            </picture>
-          </div>
-        </div>
+        <p>I continued onto mid-fidelity and high-fidelity wireframes, making adjustments at each level to clarify the user experience. Then, finally, I had my clickable prototype ready for user testing!</p>
+        <h4>CLICKABLE PROTOTYPE:</h4>
+        <iframe class="hover-shadow" width="1000" height="500" src="https://xd.adobe.com/embed/998f810d-67b9-4893-b988-6501619ad289-ccdc/" allowfullscreen></iframe>
+        <section>
 
-        <p>Updated confirmation feedback</p>
-        <p>This worked better because it returned the user to the screen they initiated the task on immediately, allowing them to continue onto their next task smoothly while still providing a subtle confirmation.</p>
-        <p>Insert post-testing prototypes???</p>
-      </div>
-      <div class="container">
-        <h2>EXPOSITION</h2>
-        <h3>TELL STORY & PRESENT</h3>
-        <p>With the user experience design mostly complete, I turned my attention to the user interface design and creating a design language system for TotalHealth.</p>
-        <p>I established a color palette with cool greens and blues, which have a calming and trustworthy effect on users.</p>
-        <picture>
+          <h3>USER TESTING</h3>
           <div class="row">
-            <div class="column col-md-6 col-lg-6">
+            <div class=" col-md-6 col-lg-6">
+              <p>I chose moderated remote and in-person testing methods to balance the ease of scheduling with remote participants and the advantage of being physically present to observe participants in-person <a
+                  href="files/th/th-usability-test-report.pdf" target="_blank">USABILITY TEST REPORT</a>.</p>
+              <p>I discovered I overlooked some major components to the navigation and user experience: <b>feedback!</b> Without confirmation that their intended task was complete, users were visibly unsure if they completed the given task. To reduce
+                potential interruption to the user's flow, I opted for feedback via a snackbar.
+              </p>
+            </div>
+            <div class=" col-md-6 col-lg-6">
 
+              <picture>
+                <source srcset="img/th/img-midfi-confirmation2@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-midfi-confirmation2@2x.jpg" alt="Confirmation screen after user testing">
+              </picture>
+            </div>
+            <p>This worked better because it returned the user to the screen they initiated the task on immediately, allowing them to continue onto their next task smoothly while still providing a subtle confirmation.</p>
+          </div>
+
+          <h3>UI</h3>
+          <div class="row">
+            <div class=" col-md-6 col-lg-6">
+              <p>Now that I had a tested and proven user experience that fulfilled my original goal to create a platform that helps users streamline their health management, I turned to designing the user interface to support the UX and create a
+                design language system for TotalHealth. I established a color palette with cool greens and blues, which have a calming and trustworthy effect on users.</p>
+            </div>
+            <div class=" col-md-6 col-lg-6">
               <source srcset="img/th/img-color-palette@1x.jpg" media="(max-width:767px)">
               <img src="img/th/img-color-palette@2x.jpg" alt="Color palette">
-        </picture>
-      </div>
-      <div class="column col-md-6 col-lg-6">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-md-6 col-lg-6">
+              <p>I wanted a font that was pleasant and calming, but very easily readable with just a hint of style. So, I went with one of my favorites: Century Gothic.</p>
+            </div>
+            <div class=" col-md-6 col-lg-6">
+              <picture>
+                <source srcset="img/th/img-typography@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-typography@2x.jpg" alt="Typography">
+              </picture>
+
+            </div>
+          </div>
+          <h4>Splash screens</h4>
+          <div class="row">
+            <div class=" col-md-4 col-lg-4">
+              <picture>
+                <source srcset="img/th/img-welcome-mobile@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-welcome-mobile@2x.jpg" alt="Mobile splash screen">
+              </picture>
+            </div>
+            <div class=" col-md-8 col-lg-8">
+              <picture>
+                <source srcset="img/th/img-total-health-cover@1x.jpg" media="(max-width:767px)">
+                <img src="img/th/img-total-health-cover@2x.jpg" alt="Desktop sign in screen">
+              </picture>
+            </div>
+          </div>
+
+          <div class="container">
+            <h2>EXPOSITION</h2>
+            <h3>TELL STORY & PRESENT</h3>
+            <section id="ui">
+              <picture>
+                <pAfter solidifying the designs for mobile and desktop by differentiating the use of color slightly while maintaining cohesion
+                  across devices,
+                <p>It was very satisfying and exciting to see my design come to life visually with the addition of UI elements. Before packaging up my design for hand off, I reached out to colleagues via slack to solicit feedback on my design. </p>
+                <p>           I received a lot of valuable insights from my fellow designers, plenty of encouragement. One observation was that my original home screen was a bit redundant with the tabs. So, I removed the tabs from the home screen only, and added a side bar menu for an alternate method of navigation that's tucked away unless the
+                  user clicks on it. </p>
+                <div class="row">
+                  <div class=" col-md-6 col-lg-6">
+                    <picture>
+                      <source srcset="img/th/img-hifi-homepage@1x.jpg" media="(max-width:767px)">
+                      <img src="img/th/img-hifi-homepage@2x.jpg" alt="Confirmation screen before user-texting">
+                    </picture>
+                  </div>
+                  <div class=" col-md-6 col-lg-6">
+                    <picture>
+                      <source srcset="img/th/img-hifi-homepage-sidebar@1x.jpg" media="(max-width:767px)">
+                      <img src="img/th/img-hifi-homepage-sidebar@2x.jpg" alt="Confirmation screen before user-texting">
+                    </picture>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class=" col-md-6 col-lg-6">
+                    <picture>
+                      <p>Another colleague pointed out that I had a search bar in the top navigation bar, but it was unclear what could be searched for and why it was on every screen. This is a perfect example of the power of another set of eyes on a
+                        design before finishing. I hadn't even thought about this! </p>
+                        <p>I originally intended the search to allow users to find records more quickly, so I deleted it from the top bar and replaced it with the heart from the logo. Then, I put a search field on only the Records screen instead. </p>
+                    </picture>
+                  </div>
+                  <div class=" col-md-6 col-lg-6">
+
+                    <picture>
+                      <source srcset="img/th/img-mobile-records2@1x.jpg" media="(max-width:767px)">
+                      <img src="img/th/img-mobile-records2@2x.jpg" alt="Confirmation screen before user testing">
+                    </picture>
+                  </div>
+                </div>
+
+                <p>I created the full <a href="files/th/th-design-language-system.pdf" target="_blank">DESIGN LANGUAGE SYSTEM</a> document and packaged up my deliverables and assets into a folder for <a href="files/th/th-deliverables-assets.zip" target="_blank">HAND OFF</a>. Last but not least, I reviewed the project from start to finish to present in this case study!</p>
+                <p>Back up to: <a href="#prototype">CLICKABLE PROTOTYPE</a>.</p>
+                <div class="row">
 
 
-        <picture>
-          <source srcset="img/th/img-typography@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-typography@2x.jpg" alt="Typography">
-        </picture>
-        <p>Additionally, I made a final decision on font which was difficult. I wanted a font that was pleasant and calming, but very easily readable with just a hint of style. So, I went with one of my favorites, Century Gothic. </p>
 
-      </div>
-    </div>
-    <p>At this point, I realized that using illustrations as visuals instead of photo would be better because they are easier to coordinate with the color palette. Also, they're fun! But not distracting... </p>
-    <p>New splash screens for both desktop and mobile:</p>
-    <div class="row">
-      <div class="column col-md-4 col-lg-4">
-        <picture>
-          <source srcset="img/th/img-welcome-mobile@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-welcome-mobile@2x.jpg" alt="Mobile splash screen">
-        </picture>
-        <p>Mobile splashscreen</p>
-      </div>
-      <div class="column col-md-8 col-lg-8">
-        <picture>
-          <source srcset="img/th/img-total-health-cover@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-total-health-cover@2x.jpg" alt="Desktop sign in screen">
-        </picture>
-        <p>Desktop splash screen</p>
-      </div>
-    </div>
-    <p>It was very satisfying and exciting to see my design come to life visually with the addition of UI elements. After solidifying the designs for mobile and desktop--differentiating the use of color slightly while maintaining cohesion across
-      devices--I created the full <a href="files/th/th-design-language-system.pdf" target="_blank">Design Language System </a> document, then moved onto preparing to present and package up my deliverables and assets for handoff:</p>
-    <p><a href="files/th/th-deliverables-assets.zip" target="_blank">TOTALHEALTH DESIGN DELIVERABLES AND ASSESTS FOLDER</a></p>
-    <p>One last step before presentation: soliciting feedback! I reached out to colleagues for a bit of feedback on my design. I received a lot of valuable insights from my fellow designers, plenty of encouragement. </p>
-    <p>One observation was that my original home screen was a bit redundant with the tabs. So, I removed the tabs from the home screen only, and added a side bar menu for an alternate method of navigation that's tucked away unless the user clicks
-      on it. </p>
-    <div class="row">
-      <div class="column col-md-6 col-lg-6">
-        <picture>
-          <source srcset="img/th/img-hifi-homepage@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-hifi-homepage@2x.jpg" alt="Confirmation screen before user-texting">
-        </picture>
-        <p>Desktop home page before feedback</p>
-      </div>
-      <div class="column col-md-6 col-lg-6">
-        <picture>
-          <source srcset="img/th/img-hifi-homepage-sidebar@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-hifi-homepage-sidebar@2x.jpg" alt="Confirmation screen before user-texting">
-        </picture>
-        <p>Desktop home page with side menu</p>
-      </div>
-    </div>
-    <p>Another colleague pointed out that I had a search bar in the top navigation bar, but it was unclear what could be searched for and why it was on every screen. This is a perfect example of the power of another set of eyes on a design before
-      finishing--I hadn't even thought about this!</p>
-    <p>I originally intended the search to allow users to find records more quickly, so I deleted it from the top bar and replaced it with the heart from the logo. Then, I put a search field on only the Records screen instead. </p>
-    <div class="row">
-      <div class="column col-md-6 col-lg-6">
-        <picture>
-          <source srcset="img/th/img-mobile-records@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-mobile-records@2x.jpg" alt="Confirmation screen before user-texting">
-        </picture>
-        <p>Search in top navigation bar</p>
-      </div>
-      <div class="column col-md-6 col-lg-6">
+                </div>
+          </div>
 
-        <picture>
-          <source srcset="img/th/img-mobile-records2@1x.jpg" media="(max-width:767px)">
-          <img src="img/th/img-mobile-records2@2x.jpg" alt="Confirmation screen before user testing">
-        </picture>
-        <p>Search bar moved to records screen</p>
-      </div>
-    </div>
-
-    <p>The feedback from my colleagues proved invaluable going into the final step of bringing everything together to present my app features in a product demonstration video.</p>
-    <div class="row">
-              <h3>Final clickable prototypes:</h3>
-      <div class="column col-md-4 col-lg-4">
-
-        <iframe width="282" height="500" src="https://xd.adobe.com/embed/80c92254-d748-4d83-9c96-bb69a410b215-d59a/?fullscreen"></iframe>
-
-</div>
-      <div class="column col-md-8 col-lg-8">
-
-        <iframe width="800" height="499" src="https://xd.adobe.com/embed/409c784b-083b-4eac-be52-1f454cc5f67a-15cf/?fullscreen"></iframe>
-      </div>
           <footer>
             <div id="footer" class="container">
 
