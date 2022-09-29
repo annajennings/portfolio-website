@@ -1,4 +1,4 @@
- /*
+/*
 Primary (orange):#ff9a26
 Secondary (dark blue): #001137
 Tertiary (peach): #ffecd6
@@ -62,7 +62,7 @@ img {
 a {
   color: #001137;
   text-decoration: none;
-  font-family: 'interstate-condensed', sans-serif;
+  font-family: 'acier-bat-solid', sans-serif;
   font-size: 1.2em;
   line-height: 1.5em;
   font-weight: 500;
@@ -93,6 +93,18 @@ a:active {
   height: auto;
 }
 
+#img-mobile-prototype {
+  max-width: 80%;
+  height: auto;
+  float: center;
+}
+
+#img-mobile {
+  max-width: 50%;
+  height: auto;
+  float: center;
+}
+
 .center {
   text-align: center;
 }
@@ -121,6 +133,8 @@ a:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   font-weight: 500;
+  background-color: #ff9a26;
+
 }
 
 .button.contact {
@@ -148,6 +162,10 @@ a:active {
   font-weight: 500;
 }
 
+/* Side bar styling */
+
+
+
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -174,6 +192,7 @@ a:active {
 
 #footer {
   text-align: center;
+  padding-top: 50px;
 }
 
 header {
@@ -183,9 +202,11 @@ header {
   width: 100%;
   position: fixed;
 }
-li < a {
+
+li > a {
   line-height: 1.5em;
 }
+
 main {
   padding-top: 50px;
 }
@@ -193,6 +214,7 @@ main {
 #work .row {
   padding-bottom: 25px;
 }
+
 
 #icon {
   margin: 10px;
@@ -230,8 +252,8 @@ iframe { border: none; }
   clear: both;
 }
 
+/* LIGHTBOX */
 
-/* LIGHTBOX*/
 /* Create four equal columns that floats next to eachother */
 .column {
   float: left;
@@ -273,6 +295,7 @@ iframe { border: none; }
   width: 45%;
   max-width: 1000px;
 }
+
 /* Modal Content */
 .modal2-content {
   position: relative;
@@ -281,6 +304,7 @@ iframe { border: none; }
   width: 45%;
   max-width: 1000px;
 }
+
 /* The Close Button */
 .close {
   color: white;
@@ -358,9 +382,10 @@ img.demo {
 .demo:hover {
   opacity: 1;
 }
+
 /* -------------- end LIGHTBOX code -------------------------* /
 
-/*Menu toggle*/
+/* Menu toggle */
 img.hover-shadow {
   transition: 0.3s;
 }
@@ -549,13 +574,16 @@ Medium devices (640px or larger)
   .col-md-4 {
     width: 33%;
   }
+
   .col-md-8 {
     width: 66%;
   }
+
   .column {
     float: left;
     width: 33.33%;
   }
+
   .column2 {
     float: left;
     width: 50%;
@@ -592,10 +620,12 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 40%;
   }
+
   .col-lg-4 {
     width: 33%;
   }
+
   .col-lg-8 {
-      width: 66%;
-    }
+    width: 66%;
+  }
 }
