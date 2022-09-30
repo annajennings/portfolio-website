@@ -54,6 +54,13 @@ h5 {
   font-size: 1.2em;
   font-weight: 500;
 }
+h6 {
+  font-family: 'interstate-condensed', sans-serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  font-weight: 600;
+}
 
 img {
   width: 100%;
