@@ -9,6 +9,7 @@ function menuToggle () {
   }
 }
 
+//CODE FOR LIGHTBOX
 // Open the Modal
 function openModal () {
   document.getElementById('myModal').style.display = ' block'
@@ -56,35 +57,7 @@ let mainSections = document.querySelectorAll('main section')
 let lastId
 let cur = []
 
-//Slideshowlet slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-// This should probably be throttled.
+//Thhis should probably be throttled.
 // Especially because it triggers during smooth scrolling.
 // https://lodash.com/docs/4.17.10#throttle
 // You could do like...
@@ -92,20 +65,3 @@ function showSlides(n) {
 //    _.throttle(doThatStuff, 100);
 // });
 // Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener('scroll', event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
-
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      link.classList.add('current')
-    } else {
-      link.classList.remove('current')
-    }
-  })
-}
