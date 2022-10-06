@@ -24,7 +24,7 @@ var slideIndex = 1
 showSlides(slideIndex)
 
 // Next/previous controls
-function plusSlides (n) {
+function plusSlides(n) {
   howSlides (slideIndex += n)
 }
 
@@ -65,3 +65,5 @@ let cur = []
 //    _.throttle(doThatStuff, 100);
 // });
 // Only not doing it here to keep this Pen dependency-free.
+
+// Slideshow
