@@ -1,0 +1,194 @@
+/*
+Primary (orange):#ff9a26
+Secondary (dark blue): #001137
+Tertiary (peach): #ffecd6
+Quaternary (neutral dark blue): #597188
+Quinary (bright blue): #0080ff
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #001137;
+  font-family: 'interstate-condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.6;
+  color: #ffecd6;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  padding: 100px 50px 20px 50px;
+}
+
+#svg {
+  max-width: 800px;
+}
+.button {
+  /* must be towards bottom */
+
+  display: inline-block;
+
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #597188;
+  font-family: 'interstate-condensed', sans-serif;
+  color: #ffecd6; /* needed to override the default link color */
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0px solid #ffecd6; /* width of the border, type, color */
+
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  margin: auto;
+  box-shadow: 3px 3px 2px 2px rgba(89, 113, 136, 0.3);
+
+}
+
+.button:hover {
+  color: #001137;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #ff9a26;
+  border: none;
+}
+
+
+
+/* ==============================
+Medium devices (640px or larger)
+================================= */
+@media only screen and (min-width: 641px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #001137;
+    font-family: 'interstate-condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.6;
+    color: #ffecd6;
+    text-align: center;
+  }
+
+
+
+  .center {
+    text-align: center;
+  }
+
+  .container {
+    padding: 150px 50px 50px 50px;
+
+  }
+  #svg {
+    max-width: 800px;
+  }
+  .button {
+    /* must be towards bottom */
+
+    display: inline-block;
+
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #597188;
+    font-family: 'interstate-condensed', sans-serif;
+    color: #ffecd6; /* needed to override the default link color */
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0px solid #ffecd6; /* width of the border, type, color */
+
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    margin: auto;
+    box-shadow: 3px 3px 2px 2px rgba(89, 113, 136, 0.3);
+
+  }
+
+  .button:hover {
+    color: #001137;
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #ff9a26;
+    border: none;
+  }
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #001137;
+    font-family: 'interstate-condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.6;
+    color: #ffecd6;
+    text-align: center;
+
+
+  }
+
+
+  .center {
+    text-align: center;
+  }
+
+  .container {
+    padding: 200px 50px 50px 50px;
+
+  }
+  #svg {
+    max-width: 800px;
+  }
+  .button {
+    /* must be towards bottom */
+
+    display: inline-block;
+
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #597188;
+    font-family: 'interstate-condensed', sans-serif;
+    color: #ffecd6; /* needed to override the default link color */
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: none;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0px solid #ffecd6; /* width of the border, type, color */
+
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    margin: auto;
+    box-shadow: 3px 3px 2px 2px rgba(89, 113, 136, 0.3);
+
+  }
+
+  .button:hover {
+    color: #001137;
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+    font-weight: 300;
+    background-color: #ff9a26;
+    border: none;
+  }
