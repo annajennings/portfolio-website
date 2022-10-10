@@ -108,7 +108,20 @@ textarea {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-
+#landing-heading {
+  color: #ff9a26
+  text-align: center;
+  font-family: 'acier-bat-noir', sans-serif;
+  line-height: 1.2;
+}
+#landing-body {
+  background-color: #001137;
+  font-family: 'Interstate', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.6;
+  color: #ffecd6;
+}
 #contact-form {
   padding-top: 50px;
 }
@@ -150,7 +163,8 @@ textarea {
   max-width: 50%;
   height: auto;
   float: center;
-  box-shadow: 4px 4px 3px 3px rgba(89, 113, 136, 0.75);
+  box-shadow: 4px 4px 3px 3px rgba(89, 113, 136, 0.3);
+
   border-radius: 5px;
 }
 
@@ -327,7 +341,7 @@ textarea {
 
 #footer {
   text-align: center;
-  padding-top: 0px;
+  padding-top: 100px;
 }
 #footer-contact {
   text-align: center;
@@ -337,6 +351,9 @@ textarea {
   box-shadow: 4px 4px 3px 3px rgba(89, 113, 136, 0.3);
   border-radius: 5px;
 
+}
+#resume {
+  max-width: 300px;
 }
 
 header {
@@ -844,6 +861,11 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   .container {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-project {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
